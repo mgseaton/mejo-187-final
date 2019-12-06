@@ -22,6 +22,7 @@ body, html {
   background-position: 0% 25%; 
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; 
   position: relative;
   z-index: 1; 
 }
@@ -64,10 +65,18 @@ body, html {
   height: 100%;
 }
 
-#intro {background-color: #7c9177;}
 #tl {background-color: #3f4559;}
 #lengths {background-color: gray;}
-#sources {background-color: blue;} 
+#sources {
+    background-color: #8a2424;
+    text-align: center; 
+} 
+#sources a {
+    color: white;
+}
+#sources ul {
+    list-style-type: none; 
+}
 
 /*TAB STYLING ENDS HERE *********************************************************************************************************/
   
