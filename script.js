@@ -41,3 +41,35 @@ window.onclick = function(event) {
         ljgModal.style.display = "none"; 
     }
 }
+
+// MARY I FUNCTIONALITY 
+let maryiModal = document.getElementById("maryiModal"); 
+let maryiButton = document.getElementById("maryiButton"); 
+let maryiClose = document.getElementById("maryiClose"); 
+maryiButton.onclick = function() {
+    maryiModal.style.display = "block"; 
+}
+maryiClose.onclick = function() {
+    maryiModal.style.display = "none"; 
+}
+window.onclick = function(event) {
+    if (event.target == maryiModal) {
+        maryiModal.style.display = "none"; 
+    }
+}
+
+// ELIZABETH I FUNCTIONALITY 
+let eliziModal = document.getElementById("elizabethiModal"); 
+let eliziButton = document.getElementById("elizabethiButton"); 
+let eliziClose = document.getElementById("elizabethiClose"); 
+eliziButton.onclick = function() {
+    eliziModal.style.display = "block"; 
+}
+eliziClose.onclick = funciton() {
+    eliziModal.style.display = "none"; 
+}
+window.onclick = function(event) {
+    if (event.target == eliziModal) {
+        eliziModal.style.display == "none"; 
+    }
+}
