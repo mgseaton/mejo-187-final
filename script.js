@@ -73,3 +73,35 @@ window.onclick = function(event) {
         eliziModal.style.display == "none"; 
     }
 }
+
+// MARY II FUNCTIONALITY 
+let maryiiModal = document.getElementById("maryiiModal"); 
+let maryiiButton = document.getElementById("maryiiButton"); 
+let maryiiClose = document.getElementById("maryiiClose"); 
+maryiiButton.onclick = function() {
+    maryiiModal.style.display = "block"; 
+}
+maryiiClose.onclick = function() {
+    maryiiModal.style.display = "none"; 
+}
+window.onclick = function(event) {
+    if (event.target == maryiiModal) {
+        maryiiModal.style.display == "none"; 
+    }
+}
+
+// ANNE FUNCTIONALITY 
+let anneModal = document.getElementById("anneModal"); 
+let anneButton = document.getElementById("anneButton"); 
+let anneClose = document.getElementById("anneClose"); 
+anneButton.onclick = function() {
+    anneModal.style.display = "block"; 
+}
+anneClose.onclick = function() {
+    anneModal.style.display = "none"; 
+}
+window.onclick = function(event) {
+    if (event.target == anneModal) {
+        anneModal.style.display == "none"; 
+    }
+}
