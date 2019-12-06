@@ -9,169 +9,223 @@
 </head>
 <body>
 
-    <div class="timeline">
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
 
-        <div class="container left imageContainer">
-            <img src="images/matilda.jpg" alt="Matilda of Boulogne" class="image" style="width:100%">
-            <div class="middle">
-                <button id="matildaButton" class="nameButton">Matilda of Boulogne (r. 1135-1154)</button>
-            </div>
-        </div>
-        
-        <!-- Matilda Modal -->
-        <div id="matildaModal" class="modal">
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+        <div class="timeline">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-            <div class="modal-header">
-                <span id="matildaClose" class="close">&times;</span>
-                <h2>Matilda of Boulogne (r. 1135-1154)</h2>
+            <div class="container left imageContainer">
+                <img src="images/matilda.jpg" alt="Matilda of Boulogne" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="matildaButton" class="nameButton">Matilda of Boulogne (r. 1135-1154)</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <div class="modal-image-container"><img src="images/matilda2.jpg" alt="Holy Card of Matilda of Boulogne"></div>
-                <p class="right-column">Matilda of Boulogne was the wife of Stephen of Blois, who, in turn, was the son of Henry I. Stephen usurped the throne in 1135, and the period that followed is known as "The Anarchy." Matilda was crowned Queen of England alongisde her husband on March 22, 1136. Together they battled many invaders, including her cousin, Empress Matilda, until a hesistant peace was reached in 1147. She passed away in 1152 from a fever while visitng a friend in Essex, and was buried at Faversham Abbey, which she herself had founded.</p>
-            </div>
-            <div class="modal-footer">
-                <h3>Modal Footer</h3>
-            </div>
-            </div>
-        
-        </div>
+            
+            <!-- Matilda Modal -->
+            <div id="matildaModal" class="modal">
 
-        <div class="container right imageContainer">
-            <img src="images/ladyjanegrey.jpg" alt="Lady Jane Grey" class="image" style="width:100%">
-            <div class="middle">
-                <button id="ladyJaneGreyButton" class="nameButton">Lady Jane Grey (r. 10-19 July 1553)</button>
-            </div>
-        </div>
-
-        <!--LJG Modal-->
-        <div id="ladyJaneGreyModal" class="modal">
-            <div class="modal-content">
+                <!-- Modal content -->
+                <div class="modal-content">
                 <div class="modal-header">
-                    <span id="ladyJaneGreyClose" class="close">&times;</span>
-                    <h2>Lady Jane Grey (r. 10-19 July 1553)</h2>
+                    <span id="matildaClose" class="close">&times;</span>
+                    <h2>Matilda of Boulogne (r. 1135-1154)</h2>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-image-container"><img src="images/ljg2.jpg" alt="Lady Jane Grey"></div>
-                    <p class="right-column">The Duke of Northumberland, the president of the King's Council, convinced the ill Edward IV to name Lady Jane Grey, a great niece of Henry VIII, as his heir just before he died. She officially assumed the throne on July 10, 1553. However, the country had different plans. They rallied around Mary, the daughter of Catherine of Aragon and a devout member of the Roman Catholic Church. After a brief nine day rule, even Jane's father withdrew his support for her reign, and she was deposed. She was executed alongside her husband in 1554.</p>
+                    <div class="modal-image-container"><img src="images/matilda2.jpg" alt="Holy Card of Matilda of Boulogne"></div>
+                    <p class="right-column">Matilda of Boulogne was the wife of Stephen of Blois, who, in turn, was the son of Henry I. Stephen usurped the throne in 1135, and the period that followed is known as "The Anarchy." Matilda was crowned Queen of England alongisde her husband on March 22, 1136. Together they battled many invaders, including her cousin, Empress Matilda, until a hesistant peace was reached in 1147. She passed away in 1152 from a fever while visitng a friend in Essex, and was buried at Faversham Abbey, which she herself had founded.</p>
                 </div>
                 <div class="modal-footer">
                     <h3>Modal Footer</h3>
                 </div>
+                </div>
+            
             </div>
-        </div>
-        
-        <div class="container left imageContainer">
-            <img src="images/maryi.jpg" alt="Mary I" class="image" style="width:100%">
-            <div class="middle">
-                <button id="maryiButton" class="nameButton">Mary I (r.1553-1558)</button>
-            </div>
-        </div>
 
-        <!--Mary I Modal-->
-        <div id="maryiModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span id="maryiClose" class="close">&times;</span>
-                    <h2>Mary I (r.1553-1558)</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-image-container"><img src="images/maryi2.jpg" alt="Portrait of Mary I"></div>
-                    <p class="right-column">Mary I was the first English queen to reign not through marriage to a king, but by her own right. She was said to be incredibly brave, but also incredibly stubborn. Parliament declared her illegitimate in 1533 which removed her from the line of succession, but she regained her right to the throne in 1544. Her brother, Edward, however, removed her from succession once again, due to her faithfulness to the Catholic Church and rejection of the English Protestant Church. Mary, however, brought the Catholic Church back to England, and, in three years' time, burnt about 300 accused heretics at the stake. This brought wild unpopularity upon Mary, especially among the gentry and the aristocracy, and even earned her the nickname "Bloody Mary." She married Philip, the future King of Spain, in 1554, but never gave birth to a child. She passed away in 1558, probably due to cancer, without a Catholic heir to succeed her.</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+            <div class="container right imageContainer">
+                <img src="images/ladyjanegrey.jpg" alt="Lady Jane Grey" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="ladyJaneGreyButton" class="nameButton">Lady Jane Grey (r. 10-19 July 1553)</button>
                 </div>
             </div>
-        </div>
 
-        <div class="container right imageContainer">
-            <img src="images/elizabethi.jpg" alt="Elizabeth I" class="image" style="width:100%">
-            <div class="middle">
-                <button id="elizabethiButton" class="nameButton">Elizabeth I (r.1558-1603)</button>
+            <!--LJG Modal-->
+            <div id="ladyJaneGreyModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="ladyJaneGreyClose" class="close">&times;</span>
+                        <h2>Lady Jane Grey (r. 10-19 July 1553)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/ljg2.jpg" alt="Lady Jane Grey"></div>
+                        <p class="right-column">The Duke of Northumberland, the president of the King's Council, convinced the ill Edward IV to name Lady Jane Grey, a great niece of Henry VIII, as his heir just before he died. She officially assumed the throne on July 10, 1553. However, the country had different plans. They rallied around Mary, the daughter of Catherine of Aragon and a devout member of the Roman Catholic Church. After a brief nine day rule, even Jane's father withdrew his support for her reign, and she was deposed. She was executed alongside her husband in 1554.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
             </div>
-        </div>
+            
+            <div class="container left imageContainer">
+                <img src="images/maryi.jpg" alt="Mary I" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="maryiButton" class="nameButton">Mary I (r.1553-1558)</button>
+                </div>
+            </div>
 
-        <!--Elizabeth I Modal-->
-        <div id="elizabethiModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span id="elizabethiClose" class="close">&times;</span>
-                    <h2>Elizabeth I (r.1558-1603)</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-image-container"><img src="images/elizabethi2.jpg" alt="Portrait of Elizabeth I"></div>
-                    <p class="right-column">Elizabeth I was the last Tudor monarch, the daughter of Henry VIII and Anne Boleyn. Elizabeth became queen when her half-sister, Queen Mary I, passed away in 1558. She was said to be very intelligent and determined. During her 45 year reign, she established a stable Church of England, and the arts in the country flourished. Elizabeth even had the honor of attending the opening night performance of Shakespeare's "A Midsummer Night's Dream." In 1568, Mary, Queen of Scots, fled to England after her second husband was murdered. Elizabeth imprisoned Mary for 19 years because along with Mary came plots of rebellion and even assassinations. Elizabeth eventually executed Mary in 1587. At the end of her reign, Elizabeth had amassed a massive national debt due to her many wars with various countries, including Spain and France. She died somewhat of a legend to her people on March 24,1603, with no children.</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+            <!--Mary I Modal-->
+            <div id="maryiModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="maryiClose" class="close">&times;</span>
+                        <h2>Mary I (r.1553-1558)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/maryi2.jpg" alt="Portrait of Mary I"></div>
+                        <p class="right-column">Mary I was the first English queen to reign not through marriage to a king, but by her own right. She was said to be incredibly brave, but also incredibly stubborn. Parliament declared her illegitimate in 1533 which removed her from the line of succession, but she regained her right to the throne in 1544. Her brother, Edward, however, removed her from succession once again, due to her faithfulness to the Catholic Church and rejection of the English Protestant Church. Mary, however, brought the Catholic Church back to England, and, in three years' time, burnt about 300 accused heretics at the stake. This brought wild unpopularity upon Mary, especially among the gentry and the aristocracy, and even earned her the nickname "Bloody Mary." She married Philip, the future King of Spain, in 1554, but never gave birth to a child. She passed away in 1558, probably due to cancer, without a Catholic heir to succeed her.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="container left imageContainer">
-            <img src="images/maryii.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-                <button id="maryiiButton" class="nameButton">Mary II (r. 1689-1694)</button>
-            </div>
-        </div>
 
-        <!--Mary II Modal-->
-        <div id="maryiiModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span id="maryiiClose" class="close">&times;</span>
-                    <h2>Mary II (r. 1689-1694)</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-image-container"><img src="images/maryii2.jpg" alt="Queen Mary II"></div>
-                    <p class="right-column">In 1689, William and Mary were offered the throne by Parliament in King James' abandoment of the kingdom. Together they accepted a Declaration from Parliament that, along with listing guarantees for freedom of speech and fair elections, limited the power of the monarchy and reaffirmed Parliament's powers over taxation and legislation. It also required the English sovereign(s) to swear and oath of loyalty to the Anglican Church at their coronation. Under her reign, Mary saw a rapid split in Parliament into two parties: the Tories and the Whigs. She died of smallpox in 1694, having born no children.</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+            <div class="container right imageContainer">
+                <img src="images/elizabethi.jpg" alt="Elizabeth I" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="elizabethiButton" class="nameButton">Elizabeth I (r.1558-1603)</button>
                 </div>
             </div>
-        </div>
 
-        <div class="container right imageContainer">
-            <img src="images/anne.jpg" alt="Queen Anne" class="image" style="width:100%">
-            <div class="middle">
-                <button id="anneButton" class="nameButton">Anne (r. 1702-1714)</button>
-            </div>
-        </div>
-
-        <!--Anne Modal-->
-        <div id="anneModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span id="anneClose" class="close">&times;</span>
-                    <h2>Mary II (r. 1689-1694)</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-image-container"><img src="images/anne2.jpg" alt="Queen Anne"></div>
-                    <p class="right-column">Most of Anne's reign was overshadowed by the War of the Spanish Succession. She also saw the strengthening of party politics, as the Tories and Whigs continued to compete for power in Parliament. Her reign was also plagued with disputes between Scotland and England, as the English Parliament declared her successor to be the Protestant Sophia of Hanover, which disgruntled the Catholic Scots. Eventually, the two entities settled on a common flag and currency, but allowed Scotland to retain its Catholicism. Anne died in August 1714, and, as Sophia of Hanover had already passed away by her death, she was succeeded by Sophia's son George.</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+            <!--Elizabeth I Modal-->
+            <div id="elizabethiModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="elizabethiClose" class="close">&times;</span>
+                        <h2>Elizabeth I (r.1558-1603)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/elizabethi2.jpg" alt="Portrait of Elizabeth I"></div>
+                        <p class="right-column">Elizabeth I was the last Tudor monarch, the daughter of Henry VIII and Anne Boleyn. Elizabeth became queen when her half-sister, Queen Mary I, passed away in 1558. She was said to be very intelligent and determined. During her 45 year reign, she established a stable Church of England, and the arts in the country flourished. Elizabeth even had the honor of attending the opening night performance of Shakespeare's "A Midsummer Night's Dream." In 1568, Mary, Queen of Scots, fled to England after her second husband was murdered. Elizabeth imprisoned Mary for 19 years because along with Mary came plots of rebellion and even assassinations. Elizabeth eventually executed Mary in 1587. At the end of her reign, Elizabeth had amassed a massive national debt due to her many wars with various countries, including Spain and France. She died somewhat of a legend to her people on March 24,1603, with no children.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="container left imageContainer">
-            <img src="images/victoria.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-                <div class="text">Victoria (r. 1837-1901)</div>
+            
+            <div class="container left imageContainer">
+                <img src="images/maryii.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="maryiiButton" class="nameButton">Mary II (r. 1689-1694)</button>
+                </div>
             </div>
-        </div>
 
-        <div class="container right imageContainer">
-            <img src="images/elizabethii.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-                <div class="text">Her Majesty Queen Elizabeth II (r. 1952-)</div>
+            <!--Mary II Modal-->
+            <div id="maryiiModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="maryiiClose" class="close">&times;</span>
+                        <h2>Mary II (r. 1689-1694)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/maryii2.jpg" alt="Queen Mary II"></div>
+                        <p class="right-column">In 1689, William and Mary were offered the throne by Parliament in King James' abandoment of the kingdom. Together they accepted a Declaration from Parliament that, along with listing guarantees for freedom of speech and fair elections, limited the power of the monarchy and reaffirmed Parliament's powers over taxation and legislation. It also required the English sovereign(s) to swear and oath of loyalty to the Anglican Church at their coronation. Under her reign, Mary saw a rapid split in Parliament into two parties: the Tories and the Whigs. She died of smallpox in 1694, having born no children.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
             </div>
-        </div>
 
+            <div class="container right imageContainer">
+                <img src="images/anne.jpg" alt="Queen Anne" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="anneButton" class="nameButton">Anne (r. 1702-1714)</button>
+                </div>
+            </div>
+
+            <!--Anne Modal-->
+            <div id="anneModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="anneClose" class="close">&times;</span>
+                        <h2>Anne (r. 1702-1714)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/anne2.jpg" alt="Queen Anne"></div>
+                        <p class="right-column">Most of Anne's reign was overshadowed by the War of the Spanish Succession. She also saw the strengthening of party politics, as the Tories and Whigs continued to compete for power in Parliament. Her reign was also plagued with disputes between Scotland and England, as the English Parliament declared her successor to be the Protestant Sophia of Hanover, which disgruntled the Catholic Scots. Eventually, the two entities settled on a common flag and currency, but allowed Scotland to retain its Catholicism. Anne died in August 1714, and, as Sophia of Hanover had already passed away by her death, she was succeeded by Sophia's son George.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container left imageContainer">
+                <img src="images/victoria.jpg" alt="Photograph of Queen Victoria" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="victoriaButton" class="nameButton">Victoria (r. 1837-1901)</button>
+                </div>
+            </div>
+
+            <!--Victoria Modal-->
+            <div id="victoriaModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="victoriaClose" class="close">&times;</span>
+                        <h2>Victoria (r. 1837-1901)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/victoria2.jpg" alt="Photograph of Queen Victoria"></div>
+                        <p class="right-column">Victoria was born at Kensington Palace on May 24, 1819. She is the daughter of Edward, Duke of Kent, whose father was George III. Victoria was known to have a vivacious personality, and was a talented artist. She became queen in 1837 at the young age of 18. Her reign saw a great expansion of the British Empire and its wealth. When her husband, Albert, died in 1861, Victoria fell into a deep depression, which led to her wearing solely black clothing for the rest of her reign. She lived a very private life, and rarely liked to appear in public. Throughout her lifetime, several assassination attempts were made, but she responded to them in a courageous and unshaken manner. Victoria's foreign policy revolved around peacemaking: she successfully avoided several wars through her diplomacy. She was an avid philanthropist, supporting many initiatives which aided schools and hospitals. Victoria was also the first monarch to use a train, taking a ride in 1842. She passed away on January 22, 1901, after a 64 year reign. She was succeeded by her son, Edward VII.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right imageContainer">
+                <img src="images/elizabethii.jpg" alt="Photograph of Her Majesty the Queen" class="image" style="width:100%">
+                <div class="middle">
+                    <button id="elizabethiiButton" class="nameButton">Her Majesty Queen Elizabeth II (r. 1952-)</button>
+                </div>
+            </div>
+
+            <!--Elizabeth II Modal-->
+            <div id="elizabethiiModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="elizabethiiClose" class="close">&times;</span>
+                        <h2>Her Majesty Queen Elizabeth II (r. 1952-)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image-container"><img src="images/elizabethii2.jpg" alt="Photograph of Her Majesty the Queen"></div>
+                        <p class="right-column">Elizabeth II has ruled longer than any other monarch in British history. She carries out all of her royal duties, whilst raising four children and welcoming granchildren and great-granchildren into the Royal Family. Elizabeth became queen in 1952, while visiting Kenya on a tour of the Commonwealth. Her coronation was the first ever to be broadcast on television, allowing millions of viewers to virtually attend the ceremony. Aside from being the most widely traveled monarch, Elizabeth is a devoted philanthropist, as either President or Royal Patron of over 600 charities.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
     </div>
 
     <script src="script.js"></script>
