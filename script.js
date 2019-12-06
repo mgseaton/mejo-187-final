@@ -65,7 +65,7 @@ let eliziClose = document.getElementById("elizabethiClose");
 eliziButton.onclick = function() {
     eliziModal.style.display = "block"; 
 }
-eliziClose.onclick = funciton() {
+eliziClose.onclick = function() {
     eliziModal.style.display = "none"; 
 }
 window.onclick = function(event) {
