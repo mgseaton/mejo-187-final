@@ -10,20 +10,39 @@
 <body>
 
     <div class="timeline">
-        
+
         <div class="container left imageContainer">
-            <img src="images/matilda.jpg" alt="Avatar" class="image" style="width:100%">
+            <img src="images/matilda.jpg" alt="Matilda of Boulogne" class="image" style="width:100%">
             <div class="middle">
-                <div class="text">Matilda of Boulogne (r. 1135-1154)</div>
+                <button id="matildaButton" class="nameButton">Matilda of Boulogne (r. 1135-1154)</button>
             </div>
+        </div>
+        
+        <!-- Matilda Modal -->
+        <div id="matildaModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <span id="matildaClose" class="close">&times;</span>
+                <h2>Matilda of Boulogne (r. 1135-1154)</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container"><img src="images/matilda2.jpg" alt="Holy Card of Matilda of Boulogne"></div>
+                <p class="right-column">Matilda of Boulogne was the wife of Stephen of Blois, who, in turn, was the son of Henry I. Stephen usurped the throne in 1135, and the period that followed is known as "The Anarchy." Matilda was crowned Queen of England alongisde her husband on March 22, 1136. Together they battled many invaders, including her cousin, Empress Matilda, until a hesistant peace was reached in 1147. She passed away in 1152 from a fever while visitng a friend in Essex, and was buried at Faversham Abbey, which she herself had founded.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+            </div>
+        
         </div>
 
         <div class="container right imageContainer">
-            <img src="images/ladyjanegrey.jpg" alt="Avatar" class="image" style="width:100%">
+            <img src="images/ladyjanegrey.jpg" alt="Lady Jane Grey" class="image" style="width:100%">
             <div class="middle">
-                <div class="text">Lady Jane Grey (r. 10-19 July 1553)</div>
+                <button id="ladyJaneGreyButton" class="nameButton">Lady Jane Grey (r. 10-19 July 1553)</div>
             </div>
-        </div>
         
         <div class="container left imageContainer">
             <img src="images/maryi.jpg" alt="Avatar" class="image" style="width:100%">
@@ -69,7 +88,7 @@
         </div>
 
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

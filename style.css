@@ -4,7 +4,7 @@
   
 /* Set a background color */
 body {
-    background-color: #474e5d;
+    background-color: #3f4559;
     font-family: Helvetica, sans-serif;
 }
   
@@ -43,7 +43,7 @@ body {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #8a2424;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -135,12 +135,120 @@ body {
 }
   
 .text {
-    background-color: #4CAF50;
+    background-color: #8a2424;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
 }
 /*IMAGE OVERLAY ON HOVER ENDS HERE ***********************************************************************************************/
+
+.nameButton {
+    background-color: #8a2424; /* Green */
+    border: none;
+    border-radius: 12px; 
+    color: white;
+    padding: 15px 32px;
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer; 
+}
+
+/*MODAL BOX STYLING BEGINS HERE *****************************************************************************************************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #8a2424;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+    display: grid; 
+    grid-template-columns: auto auto; 
+}
+
+.modal-image-container {
+    text-align: center; 
+}
+
+.modal-image-container img {
+    height: 50vh; 
+    padding: 5%; 
+}
+
+.right-column {
+    padding: 5%;  
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #8a2424;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+/*MODAL BOX STYLING ENDS HERE ******************************************************************************************************/
   
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
